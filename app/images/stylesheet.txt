@@ -22,17 +22,6 @@
     background-position: -70px -5px;
 }
 
-.sprite-fb {
-    width: 42px;
-    height: 44px;
-    background-position: -97px -5px;
-}
-
-.sprite-fb-hover {
-    width: 42px;
-    height: 44px;
-    background-position: -5px -59px;
-}
 
 .sprite-file {
     width: 16px;
@@ -40,17 +29,7 @@
     background-position: -149px -5px;
 }
 
-.sprite-github {
-    width: 42px;
-    height: 44px;
-    background-position: -57px -59px;
-}
 
-.sprite-github-hover {
-    width: 42px;
-    height: 44px;
-    background-position: -109px -59px;
-}
 
 .sprite-graduate {
     width: 28px;
@@ -106,17 +85,6 @@
     background-position: -5px -158px;
 }
 
-.sprite-twitter {
-    width: 42px;
-    height: 44px;
-    background-position: -192px -5px;
-}
-
-.sprite-twitter-hover {
-    width: 42px;
-    height: 44px;
-    background-position: -192px -59px;
-}
 
 .sprite-unlocked {
     width: 24px;
@@ -124,14 +92,3 @@
     background-position: -190px -113px;
 }
 
-.sprite-vk {
-    width: 42px;
-    height: 44px;
-    background-position: -172px -145px;
-}
-
-.sprite-vk-hover {
-    width: 42px;
-    height: 44px;
-    background-position: -244px -5px;
-}
