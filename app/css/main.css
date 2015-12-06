@@ -24,9 +24,13 @@ body {
 }
 
 body {
-    background-image: url(/images/bg.jpg);
-    background-size: 100%;
-    background-repeat: repeat-y;
+    background: url(../images/bg.jpg) top center no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: "open_sansregular";
+    font-size: 14px;
+    text-align: left;
+    color: #727070;
 }
 
 .wrapper {
@@ -48,9 +52,10 @@ body {
     width: auto;
     padding: 0 100px;
     height: 90px;
-    background: url(/images/header.jpg);
+    background: url(../images/header.jpg);
     border-bottom: 7px solid #fff;
     margin-bottom: 34px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
@@ -61,75 +66,6 @@ body {
     background: #fff;
 }
 
-.social {
-    margin-top: 25px;
-}
-.social ul {
-    float: right;
-}
-.social li {
-    display: inline-block;
-    margin-left: 22px;
-}
-
-.sprite {
-    background-image: url(/images/spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-
-.sprite-vk {
-    width: 42px;
-    height: 44px;
-    background-position: -172px -145px;
-}
-
-.sprite-vk:hover {
-    width: 42px;
-    height: 44px;
-    background-position: -244px -5px;
-}
-
-.sprite-fb {
-    width: 42px;
-    height: 44px;
-    background-position: -97px -5px;
-}
-
-.sprite-fb:hover {
-    width: 42px;
-    height: 44px;
-    background-position: -5px -59px;
-}
-
-.sprite-twitter {
-    width: 42px;
-    height: 44px;
-    background-position: -192px -5px;
-}
-
-.sprite-twitter:hover {
-    width: 42px;
-    height: 44px;
-    background-position: -192px -59px;
-}
-
-.sprite-github {
-    width: 42px;
-    height: 44px;
-    background-position: -57px -59px;
-}
-
-.sprite-github:hover {
-    width: 42px;
-    height: 44px;
-    background-position: -109px -59px;
-}
-
-.main-content p {
-    padding-left: 70px;
-}
 .logo {
     margin-top: 10px;
     float: left;
@@ -146,77 +82,418 @@ body {
     float: right;
 }
 
-.butt {
-  background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-  width: 248px;
-  height: 56px;
-    display: block;
-}
-
-.main-menu, .main-content, .footer{
+.main-content, .footer{
     display: block;
     background: #fff;
 }
 
-nav li:first-child {
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+}
+
+/*----------------Иконки соц сетей---------------------*/
+
+.social {
+    margin-top: 25px;
+}
+.social ul {
+    float: right;
+}
+.social li {
+    display: inline-block;
+    margin-left: 22px;
+}
+
+.social .sprite {
+    display: block;
+    width: 42px;
+    height: 44px;
+}
+.sprite-vk {
+    background-position: -172px -145px;
+}
+.sprite-vk:hover {
+    background-position: -244px -5px;
+}
+.sprite-fb {
+    background-position: -97px -5px;
+}
+.sprite-fb:hover {
+    background-position: -5px -59px;
+}
+.sprite-twitter {
+    background-position: -192px -5px;
+}
+.sprite-twitter:hover {
+    background-position: -192px -59px;
+}
+.sprite-github {
+    background-position: -57px -59px;
+}
+.sprite-github:hover {
+    background-position: -109px -59px;
+}
+
+/*----------------end Иконки соц сетей---------------------*/
+
+/*----------------Главное меню---------------------*/
+
+.main-menu li, .contacts li{
+    display: table;
+}
+
+.main-menu li:first-child {
     border-radius: 3px 3px 0 0;
 }
 
-nav li:last-child {
+.main-menu li:last-child {
     border-radius: 0 0 3px 3px;
-    border-bottom: 0px;
 }
 
-nav li:hover, .active-link  {
-    background-color: #49c0a2;
-    color: #fff;
+.main-menu li, .contacts li {
+    background-color: #bfbfbf;
+    border: 1px solid #bfbfbf;
+    background-image: -webkit-linear-gradient(left, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: -o-linear-gradient(left, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: linear-gradient(to right, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+    width: 248px;
+    height: 56px;
 }
 
-
-nav li:hover a, .active-link a{
-    color: #fff;
-}
-
-
-nav li a {
-    font-size: 23px;
-    color: #3ba8c0;
+.main-menu li a {
+    font-size: 20px;
+    font-family: "open_sanssemibold";
+    color: #727070;
+    line-height: 1.1;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.35);
     padding-left: 28px;
-    line-height: 72px;
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
 }
-.contacts-menu a{
-    color: #959aa8;
+
+
+.main-menu li:hover {
+   background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 }
+
+.main-menu li.active {
+    background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+    border: 1px solid transparent;
+    border-top: 1px solid #66dbbe;
+    border-bottom: 1px solid #2fa185;
+}
+
+.main-menu li.active a {
+    color: #1e7465;
+}
+
+/*---------------- end Главное меню---------------------*/
+
+/*---------------- Контакты---------------------*/
+
+.contacts {
+    margin-top: 34px;
+}
+.contacts li:first-child {
+    border-radius: 5px 5px 0 0;
+}
+.contacts li:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.contacts li {
+    height: 36px;
+}
+
+.contacts li a {
+    font-family: "open_sansregular";
+    font-size: 14px;
+    color: #727070;
+    line-height: 1.2;
+    text-align: left;
+    padding-left: 96px;
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.contacts li a:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+}
+
+.contacts .contacts-title {
+    background-image: -moz-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
+    background-image: -ms-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    height: 41px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: "open_sanssemibold";
+    color: rgb(208, 152, 44);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+    padding-left: 28px;
+    border: 1px solid #d0982c;
+}
+
+.contacts a:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 22px;
+    top: 10px;
+    left: 19px;
+}
+
+.sprite-email:before {
+    top: 12px !important;
+    background: transparent url(../images/spritesheet.png) no-repeat scroll -70px -5px;
+}
+
+.sprite-skype:before  {
+    background: transparent url(../images/spritesheet.png) no-repeat scroll -142px -128px;
+}
+
+.sprite-tel:before  {
+    background: transparent url(../images/spritesheet.png) no-repeat scroll -5px -158px;
+}
+
+.contacts a:after {
+    content: '';
+    position: absolute;
+    left:49px;
+    top: 0px;
+    width: 10px;
+    height: 37px;
+    background: transparent url(../images/line.png) no-repeat scroll
+}
+
+
+/*---------------- end Контакты---------------------*/
+
+/*---------------- Блоки контента---------------------*/
 
 .main-content {
-    padding-bottom: 10px;
-    margin-bottom: 25px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    margin-bottom: 36px;
+/*    padding: 16px 48px 36px 42px;*/
+    padding-bottom: 20px;
+    background-image: -webkit-linear-gradient(bottom, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: linear-gradient(to top, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+  
+
+
 }
 
-.main-content img {
+.h2 {
+    display: block;
+    background-image: -moz-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+    margin: 0 0 38px 0;
+    padding: 10px 0px 10px 42px;
+    box-sizing: border-box;
+    height: 54px;
+    font-size: 24px;
+    font-family: "open_sanssemibold";
+    color: rgb(238, 237, 236);
+    text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
+    border: 1px solid transparent;
+    border-top: 1px solid #9c9c9c;
+    border-bottom: 1px solid #636363;
+}
+
+
+/*---------------- end Блоки контента---------------------*/
+
+
+/*---------------- About info---------------------*/
+
+
+.my-photo {
+    overflow: hidden;
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+    border: 10px solid #f7f6f5;
+    box-shadow:  0 0 0 1px #cdcccb;
+    margin: 0px 35px 16px 41px;
     float: left;
-    text-align: center;
-    padding: 0 auto;
 }
 
-.padding-img {
-    padding-left: 7px;
+.my-photo img {
+    width: 100%;
+    overflow: hidden;
 }
 
-.main-content div {
-    margin-bottom: 30px;
-    margin-left: 57px;
+.about-info {
+    float: left;
 }
 
-.first-line-p {
-    font-size: 17px;
-    margin: 3px 0;
+.about-info p, .main-content p {
+    margin: 0 0 5px 0;
 }
 
+.first-text {
+    font-family: "open_sanssemibold";
+}
 
-.address div p{
+.skills {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: block;
+    width: 230px;
+    float: right
+}
+.skills li:before {
+    content: "";
+    width: 11px;
+    height: 25px;
+    display: block;
+    background-image: url("../images/button-skil.png");
+    background-repeat: no-repeat;
+    margin-top: -4px;
+    margin-left: -17px;
+    position: absolute;
+}
+
+.skills li {
+    display: inline-block;
+    font-family: "open_sanssemibold";
+    font-size: 13px;
+    color: rgb(30, 116, 101);
+    text-transform: uppercase;
+/*    line-height: 1.687;*/
     text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45);
+    -moz-transform: matrix( 0.69018820800999,0,0,0.69018820800999,0,0);
+    -webkit-transform: matrix( 0.69018820800999,0,0,0.69018820800999,0,0);
+    -ms-transform: matrix( 0.69018820800999,0,0,0.69018820800999,0,0);
+    
+     background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+     background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+     background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+     box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+    padding: 0px 8px 0 6px;;
+    
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-radius:  0 4px 4px 0;
+}
+
+.p-skills {
+    margin-top: 20px !important;
+    clear: both;
+    float: left;
+}
+
+/*---------------- end About info---------------------*/
+
+
+/*---------------- Опыт, образование---------------------*/
+.list-work-exp .h2{
+    margin-bottom: 18px;
+}
+.work {
+    padding-right: 48px;
+    padding-bottom: 
+}
+
+.work .list-work:last-child, .work .list-work:last-child:after {
+    border-bottom: none;
+}
+
+.list-work:before {
+    content: "";
+    width: 53px;
+    height: 54px;
+    display: block;
+    top: 50%; 
+    -webkit-transform: translateY(-50%); 
+    -o-transform: translateY(-50%); 
+    transform: translateY(-50%);
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.004),inset 0.5px 0.866px 0px 0px rgba(199, 199, 199, 0.75);
+    background: #f7f7f7 url(../images/bcase-2.png) center no-repeat scroll;
+}
+
+.list-work {
+    position: relative;
+    margin: 0 0 0 40px;
+    padding: 20px 0 20px 96px;
+    border-bottom: 2px solid #f6f5f4;
+}
+ 
+.list-work:after { 
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border-bottom: 1px solid #dbdbda;
+}
+
+.school:before {
+    background: #f7f7f7 url(../images/school.png) center no-repeat scroll;
+}
+
+.univer:before {
+    background: #f7f7f7 url(../images/graduate.png) center no-repeat scroll;
+}
+
+.add-stady:before {
+    background: #f7f7f7 url(../images/file.png) center no-repeat scroll;
+}
+
+
+/*---------------- end Опыт, образование---------------------*/
+
+.address {
+    text-align: center;
+    display: inline-block;
+}
+
+.address-p{
+    margin-top: 25px;
+    padding: 0;
+    font-size: 12px;
+    font-family: "open_sanslight";
+}
+
+.lock {
+    display: inline-block;
+    margin-left: 195px;
+    margin-top: 20px;
+    margin-right: 35px;
+    position: relative;
+    padding-left: 25px;    
+}
+.lock:before {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    background: transparent url(../images/spritesheet.png) no-repeat scroll -161px -96px;
+    width: 19px;
+    height: 22px;
 }

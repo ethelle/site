@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Workflow</title>
+    <title>Ethelle</title>
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
@@ -25,40 +26,81 @@
             </section>
         </header>
         <div class="content page-wrapper clearfix">
-            
-                <nav>
-                    <ul class="col1 main-menu">
-                        <li class="active-butt butt"><a href="#">Обо мне</a></li>
-                        <li class="butt"><a class="batt" href="#">Мои работы</a></li>
-                        <li class="butt"><a href="">Связаться со мной</a></li>
+                <section class="col1">
+                    <nav>
+                        <ul class="main-menu">
+                            <li class="active"><a href="#">Обо мне</a></li>
+                            <li><a href="#">Мои работы</a></li>
+                            <li><a href="№">Обратная связь</a></li>
+                        </ul>
+                    </nav>
+                
+                    <ul class="contacts">
+                        <li class="contacts-title">Контакты</li>
+                        <li><a class="sprite-email" href="mailto:ethelle@yandex.ru">ethelle@yandex.ru</a></li>
+                        <li><a class="sprite-tel" href="tel:+79130593770">+79130593770</a></li>
+                        <li><a class="sprite-skype" href="skype:me__dia">me__dia</a></li>
                     </ul>
-                </nav>
+                </section>
+                
+                
                 <section class="col2">
-                    <article class="main-content">
-                        <h2>Опыт работы</h2>
-                        <div>
-                        <img src="images/p1.png">
-                        <p class="first-line-p">"ИП Боровицкий" - Продавец дисков</p>
-                        <p>Сентябрь 2005 - Август 2008</p>
+                    <article class="main-content clearfix">
+                        <h2 class="h2">Основная информация</h2>
+                        <div class="my-photo">
+                            <img src="images/photo.jpg">
                         </div>
-                        <div>
-                        <img src="images/p1.png">
-                        <p class="first-line-p">"ООО Системы безопастности" - Системный администратор</p>
-                        <p>Июнь 2008 - Июль 2010</p>
+                        <div class="about-info">
+                            <p><span class="first-text">Меня зовут: </span>Брюханова Ирина</p>
+                            <p><span class="first-text">Мой возраст: </span>25 лет</p>
+                            <p><span class="first-text">Мой город: </span>Абакан</p>
+                            <p><span class="first-text">Моя специализация: </span>FRONTEND разработчик</p>
+                            <p class="p-skills"><span class="first-text">Ключевые навыки: </span></p>
+                            <ul class="skills">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Git</li>
+                                <li>GULP</li>
+                                <li>PHP</li>
+                            </ul>
                         </div>
                     </article>
-                    <article class="main-content">
-                        <h2>Образование</h2>
-                        <div>
-                        <img src="images/p2.png">
-                        <p class="first-line-p">Незаконченное высшее. СПБГУ ИТМО</p>
-                        <p>Октябрь 2012 - по настоящее время</p>
-                        </div>
-                        <div>
-                        <img src="images/p3.png" class="padding-img">
-                        <p class="first-line-p">Курсы Loftschool.ru</p>
-                        <p>Ноябрь 2014 - по настоящее время</p>
-                        </div>
+                    
+                    <article class="main-content list-work-exp">
+                        <h2 class="h2">Опыт работы</h2>
+                        <ul class="work">
+                            <li class="list-work">
+                                <p class="first-text">"ХГУ им. Н.Ф. Катанова" - ассистент</p>
+                                <p>Сентябрь 2009 - Август 2014</p>
+                            </li>
+                            <li class="list-work">
+                                <p class="first-text">"ГАУ ЦИНТ Хакасии" - web-программист</p>
+                                <p>Сентябрь 2014 - Апрель 2015</p>
+                            </li>
+                            <li class="list-work">
+                                <p class="first-text">"Хакасия Ру" - web-разработчик</p>
+                                <p>Октябрь 2015 - Настоящее время</p>
+                            </li>
+                        </ul>
+                    </article>
+                    
+                    <article class="main-content list-work-exp">
+                        <h2 class="h2">Образование</h2>
+                        <ul class="work">
+                            <li class="list-work school">
+                                <p class="first-text">Полное среднее - школа №23 г. Абакана</p>
+                                <p>1993 - 2003</p>
+                            </li>
+                            <li class="list-work univer">
+                                <p class="first-text">Высшее - ХГУ им. Н.Ф. Катанова</p>
+                                <p>Сентябрь 2003 - Июнь 2007</p>
+                            </li>
+                            <li class="list-work add-stady">
+                                <p class="first-text">Курсы Loftschool</p>
+                                <p>Ноябрь 2015 - Январь 2016</p>
+                            </li>
+                        </ul>
                     </article>
                 </section>
             
@@ -67,13 +109,16 @@
 </div>
    
     <div class="footer clearfix">
-        <div class="address">
-                <div class="col2">
-                    <p>© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
-                </div>
-        </div>
+       <section class="page-wrapper clearfix">
+           <div class="lock">
+               Вход
+           </div>
+            <div class="address">
+                    <p class="address-p">© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
+            </div>
+        </section>
     </div>
-   
+   <div style="clear: both"><!-- --></div>
    
    <script src="bower/jquery/jquery.js"></script>
    <script src="js/main.js"></script>
