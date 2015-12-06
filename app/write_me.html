@@ -2,10 +2,13 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Ethelle</title>
+    <title>Ethelle - Обратная связь</title>
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <script src="bower/html5shiv/dist/html5shiv.js"></script>
 </head>
 
 <body>
@@ -29,9 +32,9 @@
                 <section class="col1">
                     <nav>
                         <ul class="main-menu">
-                            <li class="active"><a href="#">Обо мне</a></li>
-                            <li><a href="#">Мои работы</a></li>
-                            <li><a href="№">Обратная связь</a></li>
+                            <li><a href="index.html">Обо мне</a></li>
+                            <li><a href="my_works.html">Мои работы</a></li>
+                            <li class="active"><a href="write_me.html">Обратная связь</a></li>
                         </ul>
                     </nav>
                 
@@ -46,62 +49,40 @@
                 
                 <section class="col2">
                     <article class="main-content clearfix">
-                        <h2 class="h2">Основная информация</h2>
-                        <div class="my-photo">
-                            <img src="images/photo.jpg">
-                        </div>
-                        <div class="about-info">
-                            <p><span class="first-text">Меня зовут: </span>Брюханова Ирина</p>
-                            <p><span class="first-text">Мой возраст: </span>25 лет</p>
-                            <p><span class="first-text">Мой город: </span>Абакан</p>
-                            <p><span class="first-text">Моя специализация: </span>FRONTEND разработчик</p>
-                            <p class="p-skills"><span class="first-text">Ключевые навыки: </span></p>
-                            <ul class="skills">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>Git</li>
-                                <li>GULP</li>
-                                <li>PHP</li>
-                            </ul>
-                        </div>
+                        <h2 class="h2">У вас интересный проект? Напишите мне</h2>
+                        <form class="my-form clearfix">
+                            <div class="my-form-block  clearfix">
+                                <label class="form-label">
+                                   <div class="form-label-title">Имя</div>
+                                   <input class="form-input form-name" type="text" placeholder="Как к Вам обращаться" name="Имя">
+                                </label>
+                                
+                                <label class="form-label">
+                                   <div class="form-label-title">Email</div>
+                                   <input class="form-input" type="text" placeholder="Куда мне писать" name="Email">
+                                </label>
+                                
+                                <label class="form-label">
+                                    <div class="form-label-title">Сообщение</div>
+                                    <textarea class="form-input textarea" type="text" placeholder="Кратко в чем суть" name="Сообщение"></textarea>
+                                </label>
+                                
+                                <label class="form-label">
+                                    <div class="form-label-title">Введите код, указанный на картинке</div>
+                                    <div class="form-capcha">
+                                        <img src="images/capcha.png" alt="capcha">
+                                    </div>
+                                    <input class="form-input form-code" type="text" placeholder="Введите код" name="Код">
+                                </label>
+                            </div>
+                            <div class="form-butt-block">
+                                <button class="form-butt butt-submit" type="submit">Отправить</button>
+                                <button class="form-butt" type="reset">Очистить</button>
+                            </div>                            
+                        </form>
+                        
                     </article>
                     
-                    <article class="main-content list-work-exp">
-                        <h2 class="h2">Опыт работы</h2>
-                        <ul class="work">
-                            <li class="list-work">
-                                <p class="first-text">"ХГУ им. Н.Ф. Катанова" - ассистент</p>
-                                <p>Сентябрь 2009 - Август 2014</p>
-                            </li>
-                            <li class="list-work">
-                                <p class="first-text">"ГАУ ЦИНТ Хакасии" - web-программист</p>
-                                <p>Сентябрь 2014 - Апрель 2015</p>
-                            </li>
-                            <li class="list-work">
-                                <p class="first-text">"Хакасия Ру" - web-разработчик</p>
-                                <p>Октябрь 2015 - Настоящее время</p>
-                            </li>
-                        </ul>
-                    </article>
-                    
-                    <article class="main-content list-work-exp">
-                        <h2 class="h2">Образование</h2>
-                        <ul class="work">
-                            <li class="list-work school">
-                                <p class="first-text">Полное среднее - школа №23 г. Абакана</p>
-                                <p>1993 - 2003</p>
-                            </li>
-                            <li class="list-work univer">
-                                <p class="first-text">Высшее - ХГУ им. Н.Ф. Катанова</p>
-                                <p>Сентябрь 2003 - Июнь 2007</p>
-                            </li>
-                            <li class="list-work add-stady">
-                                <p class="first-text">Курсы Loftschool</p>
-                                <p>Ноябрь 2015 - Январь 2016</p>
-                            </li>
-                        </ul>
-                    </article>
                 </section>
             
         
@@ -110,9 +91,9 @@
    
     <div class="footer clearfix">
        <section class="page-wrapper clearfix">
-           <div class="lock">
+           <a class="lock" href="#">
                Вход
-           </div>
+           </a>
             <div class="address">
                     <p class="address-p">© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
             </div>

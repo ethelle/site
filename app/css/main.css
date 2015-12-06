@@ -6,6 +6,11 @@ ul {
 
 a {
     text-decoration: none;
+    color: #727070;
+}
+
+a:visited {
+    color: #727070;
 }
 
 html,
@@ -501,115 +506,6 @@ body {
 }
 
 /*----------------end Подвал---------------------*/
-.row {
-    padding-left: 10px;
-    margin-bottom: 32px;
-}
-
-.my-works-block {
-    border-radius: 5px;
-    border: 1px solid #bfbfbf;
-    background-color: #fff;
-    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
-    width: 166px;
-    float: left;
-    margin-left: 32px;
-}
-
-.my-works-img-a {
-    overflow: hidden;
-    max-width: 165px;
-    height: 118px;
-    display: block;
-    border: 1px solid #bfbfbf;
-    background: #000;
-    
-}
-.my-works-img-a img{
-    opacity:0.8;
-    -moz-opacity:0.8;
-    filter: alpha(opacity=80) black;
-    -khtml-opacity: 0.8;
-    background-color:#000;
-}
-
-.my-works-img-a img:hover {
-    opacity:1;
-    -moz-opacity:1;
-    filter: alpha(opacity=100) black;
-    -khtml-opacity: 1;
-    background-color:#000;
-    transition: all 0.5s ease-out;
-}
 
 
-.my-works-img-div:hover {
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    color: #fff;
-    background: rgba(0,0,0,.3);
-    transition: .8s;
-}
 
-.my-works-img {
-    overflow: hidden;
-    height: 100%;
-}
-
-.my-work-link {
-    display: block;
-    min-height: 34px;
-    text-align: center;
-    background-color: rgba(65, 64, 64, 0.071);
-/*    box-shadow: inset 0px -2px 1px 0px rgba(10, 10, 10, 0.1);*/
-    font-size: 13px;
-    font-family: "open_sanssemibold";
-    color: rgb(114, 112, 112);
-    line-height: 34px;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-}
-
-.my-works-desc {
-    padding: 10px;
-    font-size: 12px;
-    font-family: font-family: "open_sanslight";
-    text-align: center;
-}
-
-.add {
-    background-image: -moz-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-    height: 133px;
-    display: table;
-}
-
-.add:before {
-    content: url(../images/polaroid.png);
-    text-align: center;
-    padding-top: 15px;
-    padding-top: 18px;
-    margin-top: 30px;
-    margin-left: 55px;
-    width: 50px;
-    height: 30px;
-    background: #f7f7f7;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50%;
-    box-shadow: -1px -1px 1px 1px #cfcfcf;
-    border: 1px solid #fcfcfc;
-}
-
-.add-link {
-    display: table-row;
-    font-size: 14px;
-    font-family: "open_sanssemibold";
-    color: rgb(114, 112, 112);
-    line-height: 1.571;
-    text-align: center;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-    padding-bottom: 25px;
-}

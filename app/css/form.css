@@ -1,0 +1,114 @@
+
+.my-form {
+    margin-left: 123px;
+    margin-right: 110px;
+}
+
+.form-label {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.form-name {
+  margin-right: 19px;
+}
+
+.form-label-title {
+    margin-bottom: 10px;
+ 
+}
+.form-input {
+    padding-left: 10px;
+    border-width: 1px;
+    border-color: rgb(72, 203, 232);
+    border-style: solid;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(214, 213, 211);
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+    width: 180px;
+    height: 39px;
+    font-size: 12px;
+    font-family: "open_sanslight";
+    line-height: 1.2;
+}
+
+.textarea {
+    width: 390px;
+    padding-top: 10px;
+    background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+    height: 170px;
+    resize:none;
+}
+
+.form-capcha {
+    background-color: #fff;
+    padding: 5px;
+    float:left;
+    margin-right: 20px;
+    border-width: 1px;
+    border-color: rgb(72, 203, 232);
+    border-style: solid;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(214, 213, 211);
+    border-radius: 4px;
+    background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35);
+    width: 179px;
+    height: 67px;
+ }
+
+.form-code {
+    margin-top: 18px;
+}
+
+.form-butt-block {
+    margin-top: 22px;
+    margin-left: 28px;
+}
+
+.form-butt {
+    border-radius: 5px;
+    background: #fff;
+    background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+    border: 1px solid #b6b6b6;
+    width: 121px;
+    height: 37px;
+    font-family: "open_sanssemibold";
+}
+
+.form-butt:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+    box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+}
+
+
+.butt-submit {
+    background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+    margin-right: 98px;
+    color: #1e7465;
+}
+
+.butt-submit:hover {
+  background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+}
