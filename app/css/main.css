@@ -493,7 +493,9 @@ body {
     margin-top: 20px;
     margin-right: 35px;
     position: relative;
-    padding-left: 25px;    
+    padding-left: 25px;
+    color: #727070;
+    text-transform: uppercase;
 }
 .lock:before {
     content: "";
