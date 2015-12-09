@@ -31,6 +31,7 @@ body {
 body {
     background: url(../images/bg.jpg) top center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     box-sizing: border-box;
     font-family: "open_sansregular";
     font-size: 14px;
@@ -107,7 +108,7 @@ body {
 }
 .social li {
     display: inline-block;
-    margin-left: 22px;
+    margin-left: 13px;
 }
 
 .social .sprite {
@@ -317,7 +318,7 @@ body {
     margin: 0 0 38px 0;
     padding: 10px 0px 10px 42px;
     box-sizing: border-box;
-    height: 54px;
+    min-height: 54px;
     font-size: 24px;
     font-family: "open_sanssemibold";
     color: rgb(238, 237, 236);
@@ -371,13 +372,14 @@ body {
 }
 .skills li:before {
     content: "";
-    width: 11px;
-    height: 25px;
+    width: 16px;
+    height: 35px;
     display: block;
     background-image: url("../images/button-skil.png");
     background-repeat: no-repeat;
-    margin-top: -4px;
-    margin-left: -17px;
+    background-size: 100%;
+    margin-top: -10px;
+    margin-left: -22px;
     position: absolute;
 }
 
@@ -398,7 +400,7 @@ body {
      background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
      background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
      box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-    padding: 0px 8px 0 6px;;
+    padding: 4px 8px 4px 6px;;
     
     border-top: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
@@ -421,7 +423,7 @@ body {
 }
 .work {
     padding-right: 48px;
-    padding-bottom: 
+/*    padding-bottom: */
 }
 
 .work .list-work:last-child, .work .list-work:last-child:after {
@@ -440,7 +442,7 @@ body {
     left: 0;
     position: absolute;
     border-radius: 50%;
-    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.004),inset 0.5px 0.866px 0px 0px rgba(199, 199, 199, 0.75);
+    box-shadow: -1px -1px 1px 1px #cfcfcf;
     background: #f7f7f7 url(../images/bcase-2.png) center no-repeat scroll;
 }
 
@@ -505,6 +507,10 @@ body {
     background: transparent url(../images/spritesheet.png) no-repeat scroll -161px -96px;
     width: 19px;
     height: 22px;
+}
+
+.lock:hover:before{
+    background: transparent url(../images/spritesheet.png) no-repeat scroll -190px -113px;
 }
 
 /*----------------end Подвал---------------------*/
