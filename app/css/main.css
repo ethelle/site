@@ -353,6 +353,7 @@ body {
 
 .about-info {
     float: left;
+    max-width: 380px;
 }
 
 .about-info p, .main-content p {
