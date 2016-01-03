@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/popap.css">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <script src="bower/html5shiv/dist/html5shiv.js"></script>
 </head>
@@ -54,21 +55,25 @@
                             <div class="my-form-block  clearfix">
                                 <label class="form-label">
                                    <div class="form-label-title">Имя</div>
+                                   <div class="err-text er-left er-name" id="err0">введите&nbsp;имя</div>
                                    <input class="form-input form-name" type="text" placeholder="Как к Вам обращаться" name="Имя">
                                 </label>
                                 
                                 <label class="form-label">
                                    <div class="form-label-title">Email</div>
+                                   <div class="err-text er-right  er-mail" id="err1">введите&nbsp;email</div>
                                    <input class="form-input" type="text" placeholder="Куда мне писать" name="Email">
                                 </label>
                                 
                                 <label class="form-label">
                                     <div class="form-label-title">Сообщение</div>
+                                    <div class="err-text er-left  er-qwe" id="err2">ваш&nbsp;вопрос</div>
                                     <textarea class="form-input textarea" type="text" placeholder="Кратко в чем суть" name="Сообщение"></textarea>
                                 </label>
                                 
                                 <label class="form-label">
                                     <div class="form-label-title">Введите код, указанный на картинке</div>
+                                    <div class="err-text er-right er-code" id="err3">код&nbsp;капчи</div>
                                     <div class="form-capcha">
                                         <img src="images/capcha.png" alt="capcha">
                                     </div>
@@ -102,6 +107,7 @@
    <div style="clear: both"><!-- --></div>
    
    <script src="bower/jquery/jquery.js"></script>
+   <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
    <script src="js/main.js"></script>
     
 </body>

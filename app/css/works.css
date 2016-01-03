@@ -48,7 +48,7 @@
     display: block;
     min-height: 34px;
     text-align: center;
-    background-color: rgba(65, 64, 64, 0.071);
+    background-color: #f3f2f1;
     font-size: 13px;
     font-family: "open_sanssemibold";
     color: rgb(114, 112, 112);
@@ -64,6 +64,7 @@
 }
 
 .add {
+    background-color: #f3f2f1;
     background-image: -moz-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
@@ -91,7 +92,7 @@
 
 .add:hover:before{
     border-radius: 50%;
-    background-color: rgb(191, 191, 191);
+    background-color: #bfbfbf;
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.004),inset 0.5px 0.866px 0px 0px rgba(199, 199, 199, 0.75);
     box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
     border: 1px solid rgb(191, 191, 191);
@@ -110,6 +111,7 @@
 
 .add:hover {
     border-radius: 5px;
+    background-color: #d3d1d1;
     background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);

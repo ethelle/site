@@ -2,10 +2,12 @@ var app = (function(){
 
 	var init = function(){
 		setUpListeners();
+        $('input, textarea').placeholder();
 	};
 
 	var setUpListeners = function(){
 		$('form').on('submit', checkForm);
+        $('form').on('reset', hideTooltip1);
 		$('.add').on('click', showForm);
 		$('.popap-close').on('click', hideForm);
         $('.add-progect').on('click', hideForm);
@@ -26,6 +28,11 @@ var app = (function(){
  	var hideForm = function(){
 		$('.add-progect').hide();
 		$('.popap').hide();
+	};
+    
+    var hideTooltip1 = function(){
+		$('.err-text').hide();
+        $('.form-input').removeClass("error");
 	};
     
     var addImgFile = function(){
@@ -96,9 +103,9 @@ var app = (function(){
 	};
     
    var hideTooltip = function(index){
-        var aaa ='.err-text' + '#err'+index;
-        $(aaa).hide();
-	};
+       var aaa ='.err-text' + '#err'+index;
+       $(aaa).hide();
+   };
     
 	return{
 		init:init

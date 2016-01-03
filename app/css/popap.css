@@ -91,15 +91,48 @@ div.popap-inp  {
     bottom: 50px;
 }
 
-.err-text:after {
+.er-left:after {
     content: '';
     position: absolute;
-    right: -12px;
+    right: -11px;
     top:8px;
     border-left: 6px solid #e69073;
     border-right: 6px solid transparent;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
+}
+
+.er-right:after {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top:8px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid #e69073;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.er-name {
+    right: 220px;
+}
+
+.er-mail {
+    right: -110px;
+}
+
+.er-qwe {
+    right: 414px;
+    bottom: 86px;
+}
+
+.er-code {
+    right: -85px;
+    bottom: 26px;
+}
+
+.err-write-me {
+    right: 220px;
 }
 
 .error {
