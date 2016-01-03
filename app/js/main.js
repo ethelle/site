@@ -10,11 +10,11 @@ var app = (function(){
 		$('.popap-close').on('click', hideForm);
         $('.add-progect').on('click', hideForm);
 		$('.file').on('change', showText);
-
+        $('.img-butt').on('click', addImgFile);
 	};
 
 	var showText =function(){
-		console.log($(this).val());
+	//	console.log($(this).val());
         var file_name =$(this).val().replace( "C:\\fakepath\\", '' );
 		$('.fakeinput').html(file_name);
 	};
@@ -27,6 +27,10 @@ var app = (function(){
 		$('.add-progect').hide();
 		$('.popap').hide();
 	};
+    
+    var addImgFile = function(){
+        $('.file').click();
+    };
 
 
 	var checkForm = function(e){
@@ -77,10 +81,10 @@ var app = (function(){
 			data: data
 		}).done(
 			function(data){
-				console.log(data.status);
+		//		console.log(data.status);
 			}
 		).fail( function(){
-			console.log("Ошибка");
+		//	console.log("Ошибка");
 		});
 
 	};

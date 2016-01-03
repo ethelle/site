@@ -113,3 +113,11 @@ div.popap-inp  {
 .popap-l input[type=file]{
     display: none;
 }
+
+.img-butt {
+    width: 52px;
+    height: 43px;
+    border-radius: 0 3px 3px 0;
+    float: right;
+    margin: 1px;
+}
