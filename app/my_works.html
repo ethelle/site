@@ -3,10 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>Ethelle - мои работы</title>
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/popap.css">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <script src="bower/html5shiv/dist/html5shiv.js"></script>
 </head>
@@ -138,7 +140,38 @@
             </div>
         </section>
     </div>
-   <div style="clear: both"><!-- --></div>
+   
+    <div class="add-progect"></div>
+        <div class="popap clearfix">
+            <form class="form-popap" name="form-popap" method="post" action="post.php" method="post" enctype="multipart/form-data">
+                <label class="popap-l form-label">
+                   <div class="form-label-title">Название проекта</div>
+                    <div class="err-text" id="err0">введите&nbspназвание</div>
+                    <input class="form-input popap-inp" type="text" placeholder="Введите название" >
+                </label>
+                <label class="popap-l form-label">
+                   <div class="form-label-title">Картинка&nbspпроекта</div>
+                   <div class="err-text" id="err1">изображение</div>
+                    <div class="form-input popap-inp fakeinput">Загрузите изображение</div>
+                    <input class="file" type="file" name="file" placeholder="Загрузите изображение">
+                </label>
+                <label class="popap-l form-label">
+                   <div class="form-label-title">URL проекта</div>
+                   <div class="err-text" id="err2">ссылка&nbspна&nbspпроект</div>
+                    <input class="form-input popap-inp" type="text" placeholder="Добавьте ссылку">
+                </label>
+                <label class="popap-l form-label">
+                   <div class="form-label-title">Описание</div>
+                   <div class="err-text  err-text-area" id="err3">описание&nbspпроекта</div>
+                    <textarea class="form-input textar-popap" cols="35" rows="6" type="text" name="textarea-popap" placeholder="Пара слов о вашем проекте"></textarea>
+                </label>
+                <div class="popap-button">
+                    <button class="form-butt butt-submit butt-submit-popap" type="submit">Добавить</button>
+                </div>
+            </form>
+            <a class="popap-close"><img src="images/X.png"></a>
+        </div>
+    
    
    <script src="bower/jquery/jquery.js"></script>
    <script src="js/main.js"></script>
